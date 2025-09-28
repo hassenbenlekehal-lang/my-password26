@@ -2,15 +2,22 @@
 const KNOWN_APPS = [
   { name: 'Gmail', domain: 'gmail.com', usernameHint: 'votre@gmail.com' },
   { name: 'Facebook', domain: 'facebook.com', usernameHint: 'email ou téléphone' },
-  { name: 'Instagram', domain: 'instagram.com', usernameHint: 'nom d\'utilisateur' },
+  { name: 'Instagram', domain: 'instagram.com', usernameHint: 'email ou téléphone' },
   { name: 'Twitter', domain: 'twitter.com', usernameHint: '@utilisateur' },
   { name: 'LinkedIn', domain: 'linkedin.com', usernameHint: 'email professionnel' },
-  { name: 'GitHub', domain: 'github.com', usernameHint: 'nom d\'utilisateur' },
+  { name: 'GitHub', domain: 'github.com', usernameHint: 'email ou téléphone' },
   { name: 'Netflix', domain: 'netflix.com', usernameHint: 'email' },
   { name: 'Amazon', domain: 'amazon.fr', usernameHint: 'email' },
   { name: 'PayPal', domain: 'paypal.com', usernameHint: 'email' },
-  { name: 'Spotify', domain: 'spotify.com', usernameHint: 'email' }
+  { name: 'Spotify', domain: 'spotify.com', usernameHint: 'email' },
+  { name: 'Discord', domain: 'discord.com', usernameHint: 'email ou téléphone' },
+  { name: 'Reddit', domain: 'reddit.com', usernameHint: 'email ou téléphone' },
+  { name: 'YouTube', domain: 'youtube.com', usernameHint: 'email' },
+  { name: 'Twitch', domain: 'twitch.tv', usernameHint: 'email ou téléphone' },
+  { name: 'Steam', domain: 'steamcommunity.com', usernameHint: 'email ou téléphone' },
+  { name: 'Tiktok', domain: 'Tiktok.com', usernameHint: 'email ou téléphone' },
 ];
+
 
 // Éléments DOM
 const elements = {
@@ -427,4 +434,5 @@ function showDemoInfo() {
 initializePresetData();
 
 // Génération automatique du premier mot de passe au chargement  
+
 generatePassword();
