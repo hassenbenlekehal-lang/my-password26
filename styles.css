@@ -371,20 +371,168 @@ button:active {
 }
 
 @media (max-width: 768px) {
+  body {
+    padding: 10px;
+    align-items: flex-start;
+  }
+
   .container {
-    margin: 10px;
-    padding: 20px;
+    margin: 0;
+    padding: 20px 15px;
+    border-radius: 20px;
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 1.8em;
+    margin-bottom: 25px;
+  }
+
+  .section {
+    padding: 20px 15px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+  }
+
+  .section-title {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+
+  input {
+    padding: 12px 15px;
+    font-size: 16px;
+  }
+
+  input.with-icon {
+    padding-left: 40px;
+  }
+
+  .service-icon {
+    left: 12px;
+    width: 18px;
+    height: 18px;
+  }
+
+  .password-options {
+    padding: 12px;
+    margin-bottom: 12px;
+  }
+
+  .option-row {
+    margin-bottom: 12px;
+    font-size: 14px;
+  }
+
+  .slider {
+    width: 50px;
+  }
+
+  button {
+    width: 100%;
+    padding: 14px 20px;
+    font-size: 15px;
+    border-radius: 10px;
   }
   
   .btn-group {
     flex-direction: column;
+    gap: 10px;
   }
-  
-  button {
+
+  .btn-small {
     width: 100%;
+    padding: 10px 15px;
+  }
+
+  .password-entry {
+    padding: 15px;
+    margin-bottom: 12px;
+  }
+
+  .entry-title {
+    font-size: 16px;
+  }
+
+  .entry-details {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .entry-details div {
+    margin-bottom: 8px;
   }
   
   .entry-actions {
     flex-direction: column;
+    gap: 8px;
+  }
+
+  .suggestions {
+    max-height: 180px;
+  }
+
+  .suggestion-item {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+
+  .toast {
+    top: 10px;
+    right: 10px;
+    left: 10px;
+    padding: 12px 15px;
+    font-size: 14px;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+
+  .section {
+    padding: 15px 12px;
+  }
+
+  .section-title {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    gap: 8px;
+  }
+
+  input {
+    padding: 10px 12px;
+    font-size: 15px;
+  }
+
+  .password-options {
+    padding: 10px;
+  }
+
+  .option-row {
+    font-size: 13px;
+  }
+
+  button {
+    padding: 12px 18px;
+    font-size: 14px;
+  }
+
+  .password-entry {
+    padding: 12px;
+  }
+
+  .entry-title {
+    font-size: 15px;
+  }
+
+  .entry-details {
+    font-size: 13px;
   }
 }
